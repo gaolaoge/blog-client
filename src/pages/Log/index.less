@@ -1,0 +1,37 @@
+@import "../../assets/style/index.less";
+
+.log-page-wrapper {
+  main {
+    width: 100%;
+    display: flex;
+    .list-wrapper,
+    .timeline-wrapper {
+      height: 100%;
+    }
+    .list-wrapper {
+      flex-direction: column;
+      // width: calc(100% - 20px);
+      .log-select-row {
+        text-align: left;
+      }
+    }
+    .timeline-wrapper {
+      margin-left: 18px;
+      width: calc(100% - 18px);
+    }
+  }
+  &.Dark {
+    main {
+      .list-wrapper,
+      .timeline-wrapper {
+        background-color: @MAIN_BGC_DARK;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .item-label {
+    display: none;
+  }
+}

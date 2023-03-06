@@ -1,0 +1,28 @@
+@import "../../assets/style/index.less";
+
+.trip-page-wrapper {
+  main {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  &.Dark {
+    main {
+      background-color: @MAIN_BGC_DARK;
+    }
+  }
+}
+
+.showListBTN {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 2;
+  width: auto;
+}
+
+.drawer {
+  position: absolute;
+  height: calc(100%);
+}

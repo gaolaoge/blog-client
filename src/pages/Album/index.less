@@ -1,0 +1,40 @@
+@import "../../assets/style/index.less";
+
+.album-page-wrapper {
+  main {
+    min-height: 100%;
+    margin: 0px 0px;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .album-list-body {
+    flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-content: flex-start;
+    margin: 20px 0px calc(32px + 20px) 0px;
+    padding: 0px 24px;
+  }
+
+  .pagination {
+    position: absolute;
+    padding-right: 16px;
+    text-align: right;
+    bottom: 20px;
+    right: 20px;
+  }
+
+  &.dark {
+    main {
+      background-color: @MAIN_BGC_DARK;
+    }
+  }
+}
+
+.emptyAlburWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
